@@ -7,12 +7,13 @@
  	<link href="css/bootstrap-responsive.css" rel="stylesheet">
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">
      $(document).on("ready",function(){
-      $(".contenedor-leftbar li").on ("click" ,function() {
-        $(".seleccionado ").removeClass("seleccionado")
-        $(this).toggleClass("seleccionado")
-      })
+
+      $("#pagprincipal").toggleClass("seleccionado");
+	  $("#catalogo").toggleClass("seleccionado");
+      
      })
 
 
@@ -22,11 +23,11 @@
 
 
     <ul id="contenedor-topbar">
-      <li class="topbar-item"><a href="">Slider superior</a></li>
-      <li class="topbar-item"><a href="">Slider medio</a></li>
-      <li class="topbar-item"><a href="">Video medio</a></li>
-      <li class="topbar-item"><a href="">Producto destacado</a></li>
-      <li class="topbar-item"><a href="">Catalogo</a></li>
+      <li id="slidersuperior" class="topbar-item"><a href="">Slider superior</a></li>
+      <li id="slidermedio" class="topbar-item"><a href="">Slider medio</a></li>
+      <li id="videomedio" class="topbar-item"><a href="">Video medio</a></li>
+      <li id="productodesta" class="topbar-item"><a href="">Producto destacado</a></li>
+      <li id="catalogo" class="topbar-item"><a href="">Catalogo</a></li>
       
     </ul>
    <ul id="contenedor-usrbar">

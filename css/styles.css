@@ -37,9 +37,20 @@ li.topbar-item{
 li.topbar-item:hover{
 	top:0;
 	background:#207ce5;
+	box-shadow:0px 0px 20px 0px;
 }
 
 li.topbar-item:hover a{
+	color:white;
+}
+
+li.topbar-item.seleccionado{
+	top:0;
+	background:#207ce5;
+	box-shadow:0px 0px 20px 0px;
+}
+
+li.topbar-item.seleccionado a{
 	color:white;
 }
 
@@ -109,11 +120,30 @@ li#fle{
 	padding-right: 43px;
 	padding-top: 17px;
 	padding-bottom: 17px;
-
 	
 
 	
 }
+
+li.leftbar-item.seleccionado{
+background: #207ce5;
+
+}
+
+li.leftbar-item.seleccionado:before{
+    position: absolute;
+    content:"";
+    margin-top: -17px;
+    left: 100%;
+    width: 0;
+    height: 0;  
+    border-left:40px solid #207ce5;  
+    border-right:35px solid transparent;    
+    border-bottom: 35px solid transparent;
+    border-top:35px solid transparent;
+}
+
+
 li.leftbar-item:hover{
 background: #207ce5;
 

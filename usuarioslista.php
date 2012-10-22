@@ -7,12 +7,12 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">
      $(document).on("ready",function(){
-      $(".contenedor-leftbar li").on ("click" ,function() {
-        $(".seleccionado ").removeClass("seleccionado")
-        $(this).toggleClass("seleccionado")
-      })
+
+      $("#usuarios").toggleClass("seleccionado");
+      
      })
 
 
