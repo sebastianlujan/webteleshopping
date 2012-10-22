@@ -20,22 +20,18 @@
 </head>
 <body>
 
-
+	<?php require_once('leftbar.php'); ?>
     <ul id="contenedor-topbar">
       <li class="topbar-item"><a href="">Agregar Usuario</a></li>
-      <li class="topbar-item"><a href="">Lista de Usuario</a></li>
-      
-     
-      
+      <li class="topbar-item"><a href="">Lista de Usuario</a></li>      
     </ul>
-   <ul id="contenedor-usrbar">
-      <li class="topbar-item"><a href="">Usuario00000</a></li>
-      <li class="topbar-item" id="fle"><a href=""><i class="icon-chevron-down"></i></a></li>
-   </ul>
+    
+    <?php require_once('usrbar.php'); ?>
+  
 
 
 
-	<?php require_once('leftbar.html'); ?>
+	
 <!--- ---------------------------------------- CONTENEDOR 2  ---------------------------------------->
 <div id="contenedor2">
 

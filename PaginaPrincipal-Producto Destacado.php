@@ -13,30 +13,28 @@
 
       $("#pagprincipal").toggleClass("seleccionado");
       
-     })
+     });
 
 
   </script>
 </head>
 <body>
 
-
+	<?php require_once('leftbar.php'); ?>
+    
     <ul id="contenedor-topbar">
       <li class="topbar-item"><a href="">Slider superior</a></li>
       <li class="topbar-item"><a href="">Slider medio</a></li>
       <li class="topbar-item"><a href="">Video medio</a></li>
       <li class="topbar-item"><a href="">Producto destacado</a></li>
-      <li class="topbar-item"><a href="">Catalogo</a></li>
-      
+      <li class="topbar-item"><a href="">Catalogo</a></li>   
     </ul>
-   <ul id="contenedor-usrbar">
-      <li class="topbar-item"><a href="">Usuario00000</a></li>
-      <li class="topbar-item" id="fle"><a href=""><i class="icon-chevron-down"></i></a></li>
-   </ul>
+    
+   <?php require_once('usrbar.php'); ?>
 
 
 
-	<?php require_once('leftbar.html'); ?>
+	
 <!--- ---------------------------------------- CONTENEDOR 2  ---------------------------------------->
 <div id="contenedor2">
   
@@ -50,8 +48,9 @@
                   <option value="varios">Varios</option>
                   <option value="proximamente">Proximamente</option>
               </select> 
-                <input type="file" id="inputError" class="image"><br>
-                <button type="submit" value="Agregar" class="btn btn-primary" id="btn-form">Cargar</button>
+                <input type="file" id="inputError" class="image">
+                <br>
+                <input type="submit" value="Cargar" class="btn btn-primary" id="btn-form">
       </form>
   </div>
 
