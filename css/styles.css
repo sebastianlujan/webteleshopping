@@ -1,5 +1,5 @@
 body{
-	background:#D3DFE5;
+	background:#C4C4C4;
 	overflow:hidden;
 }
 
@@ -53,7 +53,7 @@ li.topbar-item a{
 #contenedor-usrbar{
 	position: absolute;
 	top: 5px;	
-	left: 1080px;
+	right: 20px;
 }
 
 li#fle{	
