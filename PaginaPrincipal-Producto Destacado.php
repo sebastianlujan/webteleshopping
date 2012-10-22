@@ -40,7 +40,7 @@
 <!--- ---------------------------------------- CONTENEDOR 2  ---------------------------------------->
 <div id="contenedor2">
   
-<form action=""   class="form-inline" id="formu-slider-sup"> 
+	<form action=""   class="form-inline" id="formu-slider-sup"> 
               <select>
                   <option value="figura">Modela tu figura</option>
                   <option value="belleza">Belleza y bienestar</option>
@@ -53,15 +53,7 @@
                 <input type="file" id="inputError" class="image"><br>
                 <button type="submit" value="Agregar" class="btn btn-primary" id="btn-form">Cargar</button>
       </form>
-
-
-
-
-
-
   </div>
-
-</div>    
 
        
 

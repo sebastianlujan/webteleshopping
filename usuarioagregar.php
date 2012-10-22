@@ -156,11 +156,13 @@
             <input type="text" id="inputError" class="video">
             <span class="help-inline"></span>
           </div>
-      </div
+      </div>
         <div class="control-group info">
           <label class="control-label" for="inputError">Obseervaciones:</label>
           <div class="controls">
-            <input type="textarea" id="inputError" value="Describa el Producto...">
+            <textarea id="inputError" placeholder="Describa el Producto...">
+            
+            </textarea>
             <span class="help-inline"></span>
           </div>
       </div>
@@ -173,8 +175,8 @@
       </div>
       
 
-          <input type="submit" value="Registrar" class="btn btn-primary" id="btn-form">
-          </form>
+      <input type="submit" value="Registrar" class="btn btn-primary" id="btn-form">
+</form>
 
 
 

@@ -1,6 +1,5 @@
 body{
-	background:#C4C4C4;
-	overflow:hidden;
+	background:#E0E0E0;
 }
 
 
@@ -31,13 +30,28 @@ li.topbar-item{
 	-moz-transition:all 0.5s ease;
 	transition:all 0.5 ease;
 	cursor:pointer;
+	box-shadow:0px 0px 8px 0px;
 	
 }
 
 li.topbar-item:hover{
 	top:0;
-	background:#E2E2E2;
+	background:#207ce5;
 }
+
+li.topbar-item:hover a{
+	color:white;
+}
+
+li.topbar-item .seleccionado{
+	top:0;
+	background:#207ce5;
+}
+
+li.topbar-item  a.seleccionado{
+	color:white;
+}
+
 
 li.topbar-item a{
    
@@ -201,9 +215,17 @@ position: absolute;
 .form{
 margin: 400px;
 }
+
+#form{
+	position:relative;
+	left:140px;
+	top:50px;
+}
+
 #form label{
 color: steelblue;
 font-weight: bold;
+text-align:left;
 
 }
 

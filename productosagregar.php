@@ -61,7 +61,8 @@
         <div class="control-group info">
           <label class="control-label" for="inputError">Descripcion:</label>
           <div class="controls">
-            <input type="textarea" id="inputError" value="Describa el Producto...">
+            <textarea id="inputError" placeholder="Describa el Producto...">
+            </textarea>
             <span class="help-inline"></span>
           </div>
       </div>
