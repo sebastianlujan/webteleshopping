@@ -12,7 +12,7 @@
   <script type="text/javascript">
      $(document).on("ready",function(){
 
-      $("#productos").toggleClass("seleccionado");
+      $("#productos,#agregar").toggleClass("seleccionado");
       
      })
 
@@ -23,8 +23,8 @@
 
 <?php require_once('leftbar.php'); ?>
     <ul id="contenedor-topbar">
-      <li class="topbar-item"><a href="">Agregar Productos</a></li>
-      <li class="topbar-item"><a href="">Lista de productos</a></li>
+      <li id="agregar" ira="productosagregar.php" class="topbar-item">Agregar Productos</li>
+      <li id="listado" ira="productoslista.php" class="topbar-item">Lista de productos</li>
      
       
     </ul>

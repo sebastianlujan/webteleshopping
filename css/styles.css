@@ -1,5 +1,6 @@
 body{
 	background:#E0E0E0;
+	overflow:hidden;
 }
 
 
@@ -31,49 +32,27 @@ li.topbar-item{
 	transition:all 0.5 ease;
 	cursor:pointer;
 	box-shadow:0px 0px 8px 0px;
+	color: #353A39;
+	font-size: 20px;
+	font-weight: bold;
+	
+ 	text-decoration: none;
 	
 }
 
 li.topbar-item:hover{
 	top:0;
 	background:#207ce5;
-	box-shadow:0px 0px 20px 0px;
-}
-
-li.topbar-item:hover a{
+	box-shadow:0px 0px 20px 0px black;
 	color:white;
 }
 
 li.topbar-item.seleccionado{
 	top:0;
 	background:#207ce5;
-	box-shadow:0px 0px 20px 0px;
-}
-
-li.topbar-item.seleccionado a{
+	box-shadow:0px 0px 20px 0px black;
 	color:white;
 }
-
-li.topbar-item .seleccionado{
-	top:0;
-	background:#207ce5;
-}
-
-li.topbar-item  a.seleccionado{
-	color:white;
-}
-
-
-li.topbar-item a{
-   
- 	color: #353A39;
-	font-size: 20px;
-	font-weight: bold;
-	
- 	text-decoration: none;
-
-
- }
 
 #contenedor-usrbar{
 	position: absolute;

@@ -19,17 +19,13 @@
 	  	</script>
 	</head>
 	<body>
-		<?php require_once('leftbar.php'); ?>
-	
-	    <ul id="contenedor-topbar">
-	      <li id="slidersuperior" class="topbar-item"><a href="">Slider superior</a></li>
-	      <li id="slidermedio" class="topbar-item"><a href="">Slider medio</a></li>
-	      <li id="videomedio" class="topbar-item"><a href="">Video medio</a></li>
-	      <li id="productodesta" class="topbar-item"><a href="">Producto destacado</a></li>
-	      <li id="catalogo" class="topbar-item"><a href="">Catalogo</a></li>
-	    </ul>
-	    
-	   <?php require_once('usrbar.php'); ?>
+		<?php
+
+		require_once('leftbar.php');
+	    require_once('pagPrincipalTop-bar.php');
+	   	require_once('usrbar.php');
+
+	   ?>
 	
 	
 	

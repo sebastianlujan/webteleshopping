@@ -12,7 +12,7 @@
      $(document).on("ready",function(){
 
       $("#pagprincipal").toggleClass("seleccionado");
-      
+      $("#destacado").toggleClass("seleccionado");
      });
 
 
@@ -20,17 +20,13 @@
 </head>
 <body>
 
-	<?php require_once('leftbar.php'); ?>
-    
-    <ul id="contenedor-topbar">
-      <li class="topbar-item"><a href="">Slider superior</a></li>
-      <li class="topbar-item"><a href="">Slider medio</a></li>
-      <li class="topbar-item"><a href="">Video medio</a></li>
-      <li class="topbar-item"><a href="">Producto destacado</a></li>
-      <li class="topbar-item"><a href="">Catalogo</a></li>   
-    </ul>
-    
-   <?php require_once('usrbar.php'); ?>
+	<?php
+
+		require_once('leftbar.php');
+	    require_once('pagPrincipalTop-bar.php');
+	   	require_once('usrbar.php');
+
+	   ?>
 
 
 

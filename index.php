@@ -23,11 +23,11 @@
 		<?php require_once('leftbar.php'); ?>
 	
 	    <ul id="contenedor-topbar">
-	      <li id="slidersuperior" class="topbar-item"><a href="">Slider superior</a></li>
-	      <li id="slidermedio" class="topbar-item"><a href="">Slider medio</a></li>
-	      <li id="videomedio" class="topbar-item"><a href="">Video medio</a></li>
-	      <li id="productodesta" class="topbar-item"><a href="">Producto destacado</a></li>
-	      <li id="catalogo" class="topbar-item"><a href="">Catalogo</a></li>
+	      <li id="slidersuperior" ira="index.php" class="topbar-item">Slider superior</li>
+	      <li id="slidermedio" ira="PaginaPrincipal-SliderMedio.php" class="topbar-item">Slider medio</li>
+	      <li id="videomedio" ira="PaginaPrincipal-VideoMedio.php" class="topbar-item">Video medio</li>
+	      <li id="productodesta" ira="PaginaPrincipal-ProductoDestacado" class="topbar-item">Producto destacado</li>
+	      <li id="catalogo" ira="PaginaPrincipal-Catalogo.php" class="topbar-item">Catalogo</li>
 	    </ul>
 	    
 	   <?php require_once('usrbar.php'); ?>

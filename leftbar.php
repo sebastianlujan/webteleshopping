@@ -8,17 +8,12 @@
 	<script type="text/javascript">
 	     $(document).on("ready",function(){
 	      
-	   		$(".contenedor-leftbar li").on("click" ,function() {
-		        $(".seleccionado ").removeClass("seleccionado")
-		        $(this).toggleClass("seleccionado")
-		    })
+		    $(".leftbar-item,.topbar-item").on("click",function(){
+		   		document.location = $(this).attr("ira");
+		    });
+
 		    
-		    $(".leftbar-item").on("click",function(){
-		   		ira = $(this).attr("ira");
-		   		document.location = ira;
-		    })
-		    
-	     })
+	     });
 	</script>
 </head>
 <body>

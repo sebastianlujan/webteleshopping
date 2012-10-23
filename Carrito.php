@@ -24,7 +24,8 @@
 		<?php require_once('leftbar.php'); ?>
 	
 		<ul id="contenedor-topbar">
-			<li class="topbar-item"><a href="">Por Confirmar-Historial</a></li>
+			<li class="topbar-item">Ventas por confirmar</li>
+			<li class="topbar-item">Historial de ventas</li>
 		</ul>
 		
 		<?php require_once('usrbar.php'); ?>

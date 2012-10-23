@@ -22,8 +22,8 @@
 	<?php require_once('leftbar.php'); ?>
 	
 	    <ul id="contenedor-topbar">
-	    	<li class="topbar-item"><a href="">Importar E-Mails:</a></li>
-	      	<li class="topbar-item"><a href="">Enviar Newsletter:</a></li>
+	    	<li ira="Newsletter-importaremail.php" class="topbar-item">Importar E-Mails:</li>
+	      	<li ira="Newsletter-enviarnewsletter.php" class="topbar-item">Enviar Newsletter:</li>
 	    </ul>
 	    
 	<?php require_once('usrbar.php'); ?>

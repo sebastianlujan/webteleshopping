@@ -23,8 +23,8 @@
 	<?php require_once('leftbar.php'); ?>
 
     <ul id="contenedor-topbar">
-      <li class="topbar-item"><a href="">Agregar Usuario</a></li>
-      <li class="topbar-item"><a href="">Lista de Usuarios</a></li>
+      <li ira="usuarioagregar.php" class="topbar-item">Agregar Usuario</li>
+      <li ira="usuarioslista.php" class="topbar-item">Lista de Usuarios</li>
     </ul>
    <?php require_once('usrbar.php'); ?>
 
