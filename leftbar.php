@@ -28,7 +28,7 @@
     <ul class="contenedor-leftbar">
 			<li ira="index.php" id="pagprincipal" class="leftbar-item"><a href=""><i class="icon-th-large"></i></a></li><br>
 			<li ira="Productosagregar.php" id="productos" class="leftbar-item"><a href=""><i class="icon-th-list"></i></a></li><br>
-			<li ira="Carrito.php" id="carrito" class="leftbar-item"><div class="circulo">5</div><a href=""><i class="icon-shopping-cart"></i></a></li><br>
+			<li ira="Carrito.php" id="carrito" class="leftbar-item"><div class="circulo">8</div><a href=""><i class="icon-shopping-cart"></i></a></li><br>
 			<li ira="usuarioagregar.php" id="usuarios" class="leftbar-item"><a href=""><i class="icon-user"></i></a></li><br>
 			<li ira="Newsletter-enviarnewsletter.php" id="newsletter" class="leftbar-item"><a href=""><i class="icon-envelope"></i></a></li><br>
 	  </ul>
