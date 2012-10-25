@@ -6,7 +6,8 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+	<style type="text/css">
+	</style>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">
@@ -36,27 +37,27 @@
 <!--- ---------------------------------------- CONTENEDOR 2  ---------------------------------------->
 <div id="contenedor2">
 
-<form action="" class="bs-docs-example form-horizontal" id="form" class="formu-produ">
+<form action="php/utils/agregarproducto.php" method="POST" class="bs-docs-example form-horizontal" id="form" class="formu-produ" enctype="multipart/form-data">
           
 
       <div class="control-group info">
           <label class="control-label" for="inputError">Nombre:</label>
           <div class="controls">
-            <input type="text" id="inputError">
+            <input name="nombre" type="text" id="inputError">
             <span class="help-inline"></span>
           </div>
       </div>
       <div class="control-group info">
           <label class="control-label" for="inputError">Precio:</label>
           <div class="controls">
-            <input type="text" id="inputError">
+            <input name="precio" type="text" id="inputError">
             <span class="help-inline"></span>
           </div>
       </div>
         <div class="control-group info">
           <label class="control-label" for="inputError">Descripcion:</label>
           <div class="controls">
-            <textarea id="inputError" placeholder="Describa el Producto...">
+            <textarea name="descripcion" id="inputError" placeholder="Describa el Producto...">
             </textarea>
             <span class="help-inline"></span>
           </div>
@@ -64,21 +65,35 @@
       <div class="control-group info">
           <label class="control-label" for="inputError">Imagen miniatura:</label>
           <div class="controls">
-            <input type="file" id="inputError" class="image">
+            <input name="miniatura" type="file" id="inputError" class="image">
             <span class="help-inline"></span>
           </div>
       </div>
       <div class="control-group info">
-          <label class="control-label" for="inputError">Imagen extendida:</label>
+          <label class="control-label" for="inputError">Imagen 1:</label>
           <div class="controls">
-            <input type="file" id="inputError" class="image">
+            <input name="imagen1" type="file" id="inputError" class="image">
+            <span class="help-inline"></span>
+          </div>
+      </div>
+      <div class="control-group info">
+          <label class="control-label" for="inputError">Imagen 2:</label>
+          <div class="controls">
+            <input name="imagen2" type="file" id="inputError" class="image">
+            <span class="help-inline"></span>
+          </div>
+      </div>
+      <div class="control-group info">
+          <label class="control-label" for="inputError">Imagen 3:</label>
+          <div class="controls">
+            <input name="imagen3" type="file" id="inputError" class="image">
             <span class="help-inline"></span>
           </div>
       </div>
         <div class="control-group info">
           <label class="control-label" for="inputError">Video del Producto:</label>
           <div class="controls">
-            <input type="text" id="inputError" class="video">
+            <input name="url" type="text" id="inputError" class="video">
             <span class="help-inline"></span>
           </div>
       </div>
@@ -86,7 +101,7 @@
       <div class="control-group info">
           <label class="control-label" for="inputError">Categoria:</label>
           <div class="controls">
-            <select>
+            <select name="categoria">
                 <option value="figura">Modela tu figura</option>
                 <option value="belleza">Belleza y bienestar</option>
                 <option value="gimnasio">Tu gimnasio</option>

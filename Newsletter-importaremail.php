@@ -10,7 +10,7 @@
 	    <script type="text/javascript">
 	     $(document).on("ready",function(){
 	
-	      $("#newsletter").toggleClass("seleccionado");
+	      $("#newsletter,#importar").toggleClass("seleccionado");
 	      
 	     })
 	
@@ -22,8 +22,8 @@
 	<?php require_once('leftbar.php'); ?>
 	
 	    <ul id="contenedor-topbar">
-	    	<li ira="Newsletter-importaremail.php" class="topbar-item">Importar E-Mails:</li>
-	      	<li ira="Newsletter-enviarnewsletter.php" class="topbar-item">Enviar Newsletter:</li>
+	    	<li id="enviar" ira="Newsletter-enviarnewsletter.php" class="topbar-item">Enviar Newsletter:</li>
+	    	<li id="importar" ira="Newsletter-importaremail.php" class="topbar-item">Importar E-Mails:</li>
 	    </ul>
 	   <?php require_once('usrbar.php'); ?>
 	
@@ -36,7 +36,7 @@
 	<form action=""   class="form-inline" id="formu-slider-sup"> 
 	              
 	                <input type="file" id="inputError" class="image"><br>
-	                <button type="submit" value="Agregar" class="btn btn-primary" id="btn-form">Importar Emails:</button>
+	                <button type="submit" value="Agregar" class="btn btn-primary" id="btn-form">Importar Emails</button>
 	      </form>
 	
 	

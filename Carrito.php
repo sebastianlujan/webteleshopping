@@ -12,8 +12,8 @@
 		<script type="text/javascript">
 		     $(document).on("ready",function(){
 		
-		      $("#carrito").toggleClass("seleccionado");
-		      
+		      $("#carrito,#porconfirmar").toggleClass("seleccionado");
+					      
 		     })
 		</script>
 		
@@ -24,8 +24,8 @@
 		<?php require_once('leftbar.php'); ?>
 	
 		<ul id="contenedor-topbar">
-			<li class="topbar-item">Ventas por confirmar</li>
-			<li class="topbar-item">Historial de ventas</li>
+			<li id="porconfirmar" ira="Carrito.php" class="topbar-item">Ventas por confirmar</li>
+			<li id="historial" ira="CarritoHistorial.php" class="topbar-item">Historial de ventas</li>
 		</ul>
 		
 		<?php require_once('usrbar.php'); ?>
