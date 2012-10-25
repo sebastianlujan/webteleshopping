@@ -2,7 +2,7 @@
 
 //require_once 'utils/estalogueado.php';
 
-@session_start();
+session_start();
 
 	if ( isset($_POST["nombre"])) {
 	

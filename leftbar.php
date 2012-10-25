@@ -1,3 +1,7 @@
+<?php 
+@session_start();
+?>
+
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -11,14 +15,13 @@
 		    $(".leftbar-item,.topbar-item").on("click",function(){
 		   		document.location = $(this).attr("ira");
 		    });
-
 		    
 	     });
 	</script>
 </head>
 <body>
 
-
+	<div id="msg-bar"></div>
 	<div id="leftbar">      
     <ul class="contenedor-leftbar">
 			<li ira="index.php" id="pagprincipal" class="leftbar-item"><a href=""><i class="icon-th-large"></i></a></li><br>

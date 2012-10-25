@@ -1,3 +1,7 @@
+<?php 
+@session_start();
+?>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,7 +18,16 @@
      $(document).on("ready",function(){
 
       $("#productos,#agregar").toggleClass("seleccionado");
-      
+      <?php 
+
+				if(isset($_SESSION['mensaje'])){
+					?>
+						$("#msg-bar").html('<?php echo($_SESSION['mensaje']);?>').slideDown().delay(5000).slideUp()
+					<?php 
+					unset($_SESSION['mensaje']);
+				}
+	
+			?>
      })
 
 
@@ -57,7 +70,7 @@
         <div class="control-group info">
           <label class="control-label" for="inputError">Descripcion:</label>
           <div class="controls">
-            <textarea name="descripcion" id="inputError" placeholder="Describa el Producto...">
+            <textarea style="width:400px" name="descripcion" id="inputError" placeholder="Describa el Producto...">
             </textarea>
             <span class="help-inline"></span>
           </div>
