@@ -56,22 +56,21 @@
       <div class="control-group info">
           <label class="control-label" for="inputError">Nombre:</label>
           <div class="controls">
-            <input name="nombre" type="text" id="inputError">
+            <input name="nombre" type="text" id="inputError" placeholder="Nombre del producto">
             <span class="help-inline"></span>
           </div>
       </div>
       <div class="control-group info">
           <label class="control-label" for="inputError">Precio:</label>
           <div class="controls">
-            <input name="precio" type="text" id="inputError">
+            <input name="precio" type="text" id="inputError" placeholder="Precio del producto">
             <span class="help-inline"></span>
           </div>
       </div>
         <div class="control-group info">
           <label class="control-label" for="inputError">Descripcion:</label>
           <div class="controls">
-            <textarea style="width:400px" name="descripcion" id="inputError" placeholder="Describa el Producto...">
-            </textarea>
+            <textarea style="width:400px" name="descripcion" id="inputError"></textarea>
             <span class="help-inline"></span>
           </div>
       </div>
@@ -106,7 +105,7 @@
         <div class="control-group info">
           <label class="control-label" for="inputError">Video del Producto:</label>
           <div class="controls">
-            <input name="url" type="text" id="inputError" class="video">
+            <input name="url" type="text" id="inputError" class="video" placeholder="Url del video en youtube">
             <span class="help-inline"></span>
           </div>
       </div>
@@ -115,13 +114,13 @@
           <label class="control-label" for="inputError">Categoria:</label>
           <div class="controls">
             <select name="categoria">
-                <option value="figura">Modela tu figura</option>
-                <option value="belleza">Belleza y bienestar</option>
-                <option value="gimnasio">Tu gimnasio</option>
-                <option value="hogar">Tu hogar</option>
-                <option value="cocina">Tu cocina</option>
-                <option value="varios">Varios</option>
-                <option value="proximamente">Proximamente</option>
+                <option value="Modela tu figura">Modela tu figura</option>
+                <option value="Belleza y bienestar">Belleza y bienestar</option>
+                <option value="Tu gimnasio">Tu gimnasio</option>
+                <option value="Tu hogar">Tu hogar</option>
+                <option value="Tu cocina">Tu cocina</option>
+                <option value="Varios">Varios</option>
+                <option value="Proximamente">Proximamente</option>
             </select>
             <span class="help-inline"></span>
           </div>
