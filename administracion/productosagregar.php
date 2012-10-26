@@ -10,8 +10,6 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-	<style type="text/css">
-	</style>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">
@@ -34,7 +32,7 @@
   </script>
 </head>
 <body>
-<div id="msg-bar"></div>
+<div id="msg-bar">Prueba</div>
 <?php require_once('leftbar.php'); ?>
     <ul id="contenedor-topbar">
       <li id="agregar" ira="productosagregar.php" class="topbar-item">Agregar Productos</li>

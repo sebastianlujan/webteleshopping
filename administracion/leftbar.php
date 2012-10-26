@@ -43,7 +43,7 @@ if($pendientes > 99){
 </head>
 <body>
 
-	<div id="msg-bar"></div>
+	<div id="msg-bar">Prueba</div>
 	<div id="leftbar">      
     <ul class="contenedor-leftbar">
 			<li title="Pagina Principal" ira="index.php" id="pagprincipal" class="leftbar-item"><a href=""><i class="icon-th-large"></i></a></li><br>
