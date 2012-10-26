@@ -67,7 +67,11 @@ class DB_con{
 		else
 			return array("state" => $query, "id" => mysql_insert_id());
 	}
-	
+
+
+	public function Delete($table, $id){
+		$query = $this->Query("delete from ".$table." where id = ".$id );
+	}
 }
 
 

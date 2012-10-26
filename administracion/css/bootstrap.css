@@ -5012,7 +5012,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .tooltip.right {
-  margin-left: -30px;
+  margin-left: 3px;
 }
 
 .tooltip.bottom {
@@ -5055,7 +5055,7 @@ input[type="submit"].btn.btn-mini {
   top: 50%;
   left: 0;
   margin-top: -5px;
-  border-right-color: #000000;
+  border-right-color: #ffffff;
   border-width: 5px 5px 5px 0;
 }
 
@@ -5063,7 +5063,7 @@ input[type="submit"].btn.btn-mini {
   top: 50%;
   right: 0;
   margin-top: -5px;
-  border-left-color: #000000;
+  border-left-color: #ffffff;
   border-width: 5px 0 5px 5px;
 }
 

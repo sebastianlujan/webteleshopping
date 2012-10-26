@@ -17,9 +17,14 @@
 		   		document.location = $(this).attr("ira");
 		    });
 
-		    $("li").tooltip({
-					placement:"top",
+		    $("li .boton").tooltip({
+					placement:"left",
 			    });
+
+		    $(".leftbar-item").tooltip({
+				placement:"top",
+		    });
+		    
 		    
 	     });
 	</script>

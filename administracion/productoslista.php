@@ -1,4 +1,8 @@
-
+<?php 
+	require_once 'php/clases/dbmanager.class.php';
+	
+	$db = new DB_con();
+?>
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
@@ -38,14 +42,12 @@
 
             <div >
         <ul class="opciones">
-                <li>Liquidos<div class="boton btn-danger">Eliminar</div> <i > </i></li>
-                <li>Aceites <div class="boton btn-danger">Eliminar</div><i > </i></li> 
-                <li>Gasoil <div class="boton btn-danger">Eliminar</div><i > </i></li>
-                <li>Liquido<div class="boton btn-danger">Eliminar</div></li>
-                <li>Ruedas<div class="boton btn-danger">Eliminar</div></li>
-                <li>Aceites<div class="boton btn-danger">Eliminar</div></li> 
-                <li>Gasoil<div class="boton btn-danger">Eliminar</div></li>
-                <li>Liquido<div class="boton btn-danger">Eliminar</div></li>
+        	<?php 
+        		$res = $db->Query("SELECT nombre FROM productos");
+        		while($producto = mysql_fetch_array($res)){
+					echo '<li>'.$producto['nombre'].'<div title="eliminar el producto" class="boton btn-danger" style="float:right;margin-right:20px;margin-top:-5px">Eliminar</div> <i > </i></li>';
+				}
+        	?>
         </ul>
       </div>
 </div>

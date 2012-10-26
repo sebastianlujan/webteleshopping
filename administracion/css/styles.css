@@ -24,7 +24,7 @@ body{
 #contenedor-topbar{
 	position: absolute;
 	top: 5px;	
-	left: 200px;
+	left: 100px;
 }
 
 
@@ -37,7 +37,7 @@ li.topbar-item{
     height: 20px;
     border-radius: 10px 10px 0px 0px;
 	margin-left: 4px;
-	line-height: 25px;
+	line-height: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 17px;
@@ -48,7 +48,7 @@ li.topbar-item{
 	cursor:pointer;
 	box-shadow:0px 0px 8px 0px;
 	color: #353A39;
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: bold;
 	
  	text-decoration: none;
@@ -271,15 +271,15 @@ line-height: 40px;
 
 
 .opciones{
-	position: absolute;
+	position: relative;
 	color: steelblue;
 	font-weight: bold;
      position: absolute;
 	text-align: left;
 	list-style-type: none;
-	width: 500px;
-	margin-top: 60px;
-	margin-left: 400px;
+	width: 100%;
+	top: 60px;
+	left: 200px;
 	
  
 
@@ -291,6 +291,8 @@ ul.opciones li{
 	padding-left: 15px;
 	border-radius: 10px;
 	margin-top: 5px;
+	width:70%;
+	background-color: lightblue; 
 }
 ul.opciones li:hover{
 
@@ -303,22 +305,19 @@ ul.opciones li:hover{
 	-webkit-transition: all 0.5s ease;
 	-moz-transition:all 0.5s ease;
 	transition:all 0.5 ease;
+	cursor:pointer;
+	color:whitesmoke; 
+	background-color: #739FEF; 
 }
 ul.opciones li:nth-child(2n+1) {
 	background-color:#CFE7FA;
 }
-ul.opciones li:nth-child(2n) {
-	background-color: lightblue; 
-}
+
 ul.opciones li:nth-child(2n+1):hover {
 	color:whitesmoke;
 	background-color: #739FEF; 
 }
-ul.opciones li:nth-child(2n):hover {
-	color:whitesmoke; 
-	background-color: #739FEF; 
 
-}
 
 
 
