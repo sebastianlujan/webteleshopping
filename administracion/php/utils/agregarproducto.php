@@ -11,9 +11,10 @@ session_start();
 
 	$_POST = PurificarHash($_POST); //antes que nada purificamos los datos para no tener problemas cuando lleguen a la BD
  	$db = new DB_con();
- 	$prefijo = substr(md5(uniqid(rand())),0,10);
+
  	$imgs = array("miniatura","imagen1","imagen2","imagen3");
  	foreach($imgs as &$img){
+ 		$prefijo = substr(md5(uniqid(rand())),0,10);
  		$_FILES[$img]["name"] = str_replace(" ", "_", $_FILES[$img]["name"]);
  		$destino = "../../img/productos/".$prefijo."_".$_FILES[$img]["name"];
  		copy($_FILES[$img]["tmp_name"],$destino);

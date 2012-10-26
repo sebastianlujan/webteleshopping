@@ -34,7 +34,7 @@
   </script>
 </head>
 <body>
-
+<div id="msg-bar"></div>
 <?php require_once('leftbar.php'); ?>
     <ul id="contenedor-topbar">
       <li id="agregar" ira="productosagregar.php" class="topbar-item">Agregar Productos</li>

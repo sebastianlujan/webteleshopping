@@ -11,7 +11,7 @@
   <script type="text/javascript">
      $(document).on("ready",function(){
 
-      $("#usuarios, #listado").toggleClass("seleccionado");
+      $("#usuarios").toggleClass("seleccionado");
       
      })
 
@@ -21,9 +21,9 @@
 <body>
 
 	<?php require_once('leftbar.php'); ?>
-   <ul id="contenedor-topbar">
-      <li id="agregar" ira="usuarioagregar.php" class="topbar-item">Agregar Usuario</li>
-      <li id="listado" ira="usuarioslista.php" class="topbar-item">Lista de Usuarios</li>
+    <ul id="contenedor-topbar">
+      <li class="topbar-item"><a href="">Agregar Usuario</a></li>
+      <li class="topbar-item"><a href="">Lista de Usuario</a></li>      
     </ul>
     
     <?php require_once('usrbar.php'); ?>
@@ -35,44 +35,82 @@
 <!--- ---------------------------------------- CONTENEDOR 2  ---------------------------------------->
 <div id="contenedor2">
 
-           <div id="conteadmin">
-        <div class="apple-btn" id="titulo1">Administradores</div>
-          <div >
-        <ul class="opciones-user" id="lista-admin">
-                <li>pepe</li>
-                <li>pepe</li> 
-                <li>pepe</li>
-                <li>pepe</li>
-                <li>pepe</li>
-                <li>pepe</li> 
-                <li>pepe</li>
-                <li>pepe</li>
+        
+           <ul id="contenedor-usuariobar">
+      <li class="usuariobar-item" id="admin-style"><a href="">Administradores</a></li>     
+      <li class="usuariobar-item"  id="user-style"><a href="">Clientes</a></li>
+           </ul>
+        <ul class="opciones-user op-admin" id="lista-admin">
+                <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
         </ul>
-      </div>        
-      </div>
-      <div id="conteuser">
-          <div class="apple-btn" id="titulo2">Clientes</div>  
-                <div >
+     
+     
         <ul class="opciones-user" id="lista-users">
-                <li>paul</li>
-                <li>paul</li> 
-                <li>paul</li>
-                <li>paul</li>
-                <li>paul</li>
-                <li>paul</li> 
-                <li>paul</li>
-                <li>paul</li>
-                <li>paul</li>
-                <li>paul</li>
-                <li>paul</li> 
-                <li>paul</li>
-                <li>paul</li>
-
+                    <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
+                 <li><i class="icon-user lista-icon" ></i>pepe
+                  <div class="boton btn-inverse">Bloquear</div>
+                  <div class="boton btn-danger">Eliminar</div>
+                </li>
         </ul>
-      </div> 
-
-                
-        </div>
+    
 
 </div>
 </body>

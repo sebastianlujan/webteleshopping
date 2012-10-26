@@ -17,12 +17,10 @@
 
 
 		$_SESSION["mensaje"] = "Se he eliminado el producto correctamente";
-		echo "se elimino";
 
 	} else {
 
 		$_SESSION["mensaje"] = "No se ha eliminado el producto correctamente";
-		echo "no se elimino";
 	}
 
 		header("Location : ../../productoseliminar.php");

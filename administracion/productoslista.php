@@ -1,7 +1,9 @@
 <?php 
+	@session_start();
 	require_once 'php/clases/dbmanager.class.php';
 	
 	$db = new DB_con();
+
 ?>
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,6 +19,17 @@
      $(document).on("ready",function(){
 
       $("#productos,#listado").toggleClass("seleccionado");
+
+      <?php 
+
+				if(isset($_SESSION['mensaje'])){
+					?>
+						$("#msg-bar").html('<?php echo($_SESSION['mensaje']);?>').slideDown().delay(5000).slideUp()
+					<?php 
+					unset($_SESSION['mensaje']);
+				}
+	
+			?>
       
      })
 
@@ -43,9 +56,13 @@
             <div >
         <ul class="opciones">
         	<?php 
-        		$res = $db->Query("SELECT nombre FROM productos");
-        		while($producto = mysql_fetch_array($res)){
-					echo '<li>'.$producto['nombre'].'<div title="eliminar el producto" class="boton btn-danger" style="float:right;margin-right:20px;margin-top:-5px">Eliminar</div> <i > </i></li>';
+        		$res = $db->Query("SELECT id,nombre FROM productos");
+        		if(mysql_num_rows($res) > 0){
+	        		while($producto = mysql_fetch_array($res)){
+						echo '<li>'.$producto['nombre'].'<div ira=php/utils/eliminarproductos.php?id='.$producto['id'].' title="eliminar el producto" class="boton btn-danger" style="float:right;margin-right:20px;margin-top:-5px">Eliminar</div> <i > </i></li>';
+					}
+				}else{
+					echo("<h1>No hay productos agregados en la base de datos</h1>");	
 				}
         	?>
         </ul>
